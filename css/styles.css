@@ -4471,8 +4471,8 @@ fieldset:disabled .btn {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  color:#000;
-  background-color:#000;
+  color: #000;
+  background-color: #000;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -12044,8 +12044,12 @@ body {
 
 .about-section {
   padding-top: 10rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
-
+  background: linear-gradient(
+    to bottom,
+    #000 0%,
+    rgba(0, 0, 0, 0.9) 75%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
 }
 .about-section p {
   margin-bottom: 5rem;
@@ -12053,7 +12057,12 @@ body {
 
 .projects-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(
+    to bottom,
+    #000 0%,
+    rgba(0, 0, 0, 0.9) 75%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
 }
 .projects-section .featured-text {
   padding: 2rem;
@@ -12082,11 +12091,11 @@ body {
 .signup-section {
   padding: 4rem 0;
   background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.1) 0%,
-      rgba(0, 0, 0, 0.5) 75%,
-      #000 100%
-    );
+    to bottom,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.5) 75%,
+    #000 100%
+  );
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -12154,6 +12163,7 @@ body {
   padding: 0;
   list-style: none;
 }
+
 dl,
 ol,
 ul {
@@ -12163,9 +12173,9 @@ ul {
 *,
 ::after,
 ::before {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
-user agent stylesheet ul {
+ul {
   display: block;
   list-style-type: disc;
   margin-block-start: 1em;
@@ -12421,7 +12431,6 @@ user agent stylesheet ul {
   list-style-type: disc;
 }
 
-
 a {
   color: #007bff;
   text-decoration: none;
@@ -12487,17 +12496,21 @@ img {
 }
 
 #education {
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(
+    to bottom,
+    #000 0%,
+    rgba(0, 0, 0, 0.9) 75%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
   color: white;
 }
 
-
 .timeline > li .timeline-panel {
-    position: relative;
-    float: right;
-    width: 100%;
-    padding: 0 20px 0 100px;
-    text-align: left;
+  position: relative;
+  float: right;
+  width: 100%;
+  padding: 0 20px 0 100px;
+  text-align: left;
 }
 /* *, ::after, ::before {
     box-sizing: border-box;
@@ -12519,15 +12532,18 @@ li {
   padding: 0;
   list-style: none;
 }
-dl, ol, ul {
+dl,
+ol,
+ul {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
-user agent stylesheet
-ul {
+user agent stylesheet ul {
   display: block;
   list-style-type: disc;
   margin-block-start: 1em;
@@ -12556,11 +12572,12 @@ ul {
   border-radius: 100%;
   background-color: #fcbc1d;
 }
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
-user agent stylesheet
-div {
+user agent stylesheet div {
   display: block;
 }
 element.style {
@@ -12571,11 +12588,69 @@ element.style {
   min-height: 50px;
   margin-bottom: 50px;
 }
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+user agent stylesheet li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.timeline:before {
+  left: 50%;
+}
+.timeline:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  width: 2px;
+  margin-left: -1.5px;
+  content: "";
+  background-color: #e9ecef;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+.education {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+section {
+  padding: 100px 0;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
 *, ::after, ::before {
   box-sizing: border-box;
 }
 user agent stylesheet
-li {
-  display: list-item;
-  text-align: -webkit-match-parent;
+section {
+  display: block;
+}
+
+row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+user agent stylesheet
+div {
+  display: block;
+}
+
+.timeline > li {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 50px;
 }
